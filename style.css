@@ -1,0 +1,532 @@
+body{
+    margin: 0px;
+    font-family:sans-serif;
+    font-size:30px;
+}
+/*  Body header */
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(Media/mac-mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*  Horizontal list */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+
+}
+.horizontal-list li{
+    display: inline-block;
+    margin:16px 8px 8px 0px;
+}
+.nav-menu li a {
+    transition: color 0.5s,border-bottom 4s;
+}
+.horizontal-list li a{
+    color:white;
+    text-decoration: none;
+}
+.navmenu li a:hover{
+    color:lightgray;
+    border-bottom: 1px solid whitesmoke;
+}
+.text-center{
+    text-align:center;
+}
+/* Adding social icons */
+#name-social-container{
+    margin-top:20vh;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight:700;
+    margin-bottom: 0.5rem;
+    
+}
+.social-icons li a i  {
+       padding:10px;
+       font-size: 1.4rem;
+       border-radius:50%;
+        
+}
+
+.social-icons li a  :hover{
+       box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+#about{
+    height:auto;
+    width:100%;
+    position: relative;
+    border: 0px solid green;
+}
+#my-image{
+    height:12rem;
+    width:12rem;
+    margin:auto;
+    border: 0px solid pink;
+    
+    margin-top: -12vh ;
+}
+#my-image img {
+   height:100%;
+   width: 100%;
+   border-radius:50%;
+   border:3px solid white;
+   box-shadow: 1px 1px 10px 2px lightgrey;
+   
+}
+.aboutText{
+    width:60%;
+    margin:auto;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    color:grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size:1.1rem;
+}
+/* This is also common for all the sections  */
+        section{
+            width:100%;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section:nth-child(2n){
+            background: #9e9b9b;;
+        }
+        section:nth-child(2n+1){
+            background:white;
+        }
+        section:target{
+            background-color: #2857a4;
+        }
+
+    .section-heading{
+        width:auto;
+        padding:20px 10px 10px;
+        font-weight:400;
+    }
+    .section-heading span{
+        font-size: 40px;
+        color:#2857a4;
+        display:inline-block;
+        padding-top:10px;
+        margin-right:0.5rem;
+    }
+/* common for all sections */
+.mb75px{
+    margin-bottom:75px;
+}
+/* skills-display */
+.skills-display{
+    width:75%;
+    padding:10px;
+    margin-bottom:30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    /* border:2px solid red; */
+}
+#skills{
+    background-color:rgb(235, 233, 233);
+}
+.skills-progress{
+    width:11rem;
+    height:2.2rem;
+    background-color: grey;
+    border-radius:1rem;
+    box-shadow:1px 1px 2px 1px #b9b9b9 inset;
+    margin:25px;
+    overflow:hidden;
+    
+}
+/* This is the other way of writing rule of css which will 
+applied to immediate child of skills-progress class */
+.skills-progress>div{
+  border-radius: 20px 0px 0px 20px;
+  box-shadow:1px 1px 5px 2px #989898;
+}
+.skill-name span{
+    color:white;
+    font-size: 1rem;
+    font-weight:400;
+    margin-left:10px;
+    vertical-align:middle;
+}
+.mb-blue{
+    background-color:#2857a4;
+}
+/* Percentage class */
+.eighty-five-percent{
+    width:85%;
+    height:inherit;
+
+}
+/* for 2nd skill */
+
+.seventy-five-percent{
+    width:75%;
+    height:inherit;
+
+}
+.mb-green{
+    background-color: green;
+}
+
+
+/* for 3rd skill */
+
+.sixty-five-percent{
+    width:65%;
+    height:inherit;
+    
+}
+.mb-maroon{
+    background-color:maroon;
+}
+
+
+/* For fourth skill */
+
+.twenty-five-percent{
+    width:20%;
+    height:inherit;
+    
+}
+.mb-red{
+    background-color:rgb(236, 5, 5);
+}
+
+
+/* for fifth skill */
+
+.ninty-five-percent{
+    width:95%;
+    height:inherit;
+}
+.mb-pink{
+    background-color:rgb(212, 12, 45);
+}
+.skill-name span{
+    margin:0;
+}
+
+
+
+
+/* Ending of the skill part */
+
+/* Staring of the experience section */
+    .timeline{
+        position:relative;
+        width:75%;
+        border:0px solid black;
+    }
+    .timeline-box{
+        position:relative;
+        width:40%;
+        left:5%;
+        min-height:140px;
+        border:0px solid black;
+        margin:5px;
+    }
+    .timeline-box:nth-child(2n){
+        left:53%;
+    }
+    .timeline-box:nth-child(2n+1):after{
+          content:'';
+          position:absolute;
+          top:35%;
+          border-radius: 50%;
+          width:0.5rem;
+          height:0.5rem;
+          background-color:red;
+          right:-13.5%;
+          z-index: 1;
+
+    }
+    .timeline-box:nth-child(2n):after{
+        content:'';
+        position:absolute;
+        top:30%;
+        border-radius: 50%;
+        width:0.5rem;
+        height:0.5rem;
+        background-color:red;
+        left:-9.5%;
+        z-index:1;
+    }
+    .timeline-divider{
+        position: absolute;
+        width:0px;
+        height:75%;
+        border:3px dashed #0096fa6b;
+        top:10%;
+        left:50%;
+    }
+    .timeline-traveller{
+        position:sticky;
+        top:25%;
+        transform :rotate(90deg);
+        z-index: 2;
+    }
+    .founding-member{
+        text-align: right;
+
+    }
+    .organization-name{
+          color:#fa3e05;
+          font-size:1.2rem;
+          text-align: right;
+          font-weight:bold;
+    }
+    .time-duration{
+        font-size:.9rem;
+        text-align: right;
+    }
+    .para{
+        font-size:.9rem;
+        text-align: justify;
+        padding-top:.3rem;
+    }
+
+
+    .founding-member-left{
+        text-align:left;
+
+    }
+    .organization-name-left{
+          color:#fa3e05;
+          font-size:1.2rem;
+          text-align:left;
+          font-weight:bold;
+    }
+    .time-duration-left{
+        font-size:.9rem;
+        text-align:left;
+    }
+/* Starting of the education section */
+.timeline{
+    position:relative;
+    width:75%;
+    border:0px solid black;
+}
+.timeline-box{
+    position:relative;
+    width:40%;
+    left:5%;
+    min-height:140px;
+    border:0px solid black;
+    margin:5px;
+}
+.timeline-box:nth-child(2n){
+    left:53%;
+}
+.timeline-box:nth-child(2n+1):after{
+      content:'';
+      position:absolute;
+      top:35%;
+      border-radius: 50%;
+      width:0.5rem;
+      height:0.5rem;
+      background-color:red;
+      right:-13.5%;
+      z-index: 1;
+
+}
+.timeline-box:nth-child(2n):after{
+    content:'';
+    position:absolute;
+    top:30%;
+    border-radius: 50%;
+    width:0.5rem;
+    height:0.5rem;
+    background-color:red;
+    left:-9.5%;
+    z-index:1;
+}
+.timeline-divider-education{
+    position: absolute;
+    width:0px;
+    height:75%;
+    border:3px dashed #0096fa6b;
+    top:10%;
+    left:50%;
+}
+.timeline-traveller-education{
+    position:sticky;
+    top:25%;
+    transform :rotate(90deg);
+    z-index: 2;
+}
+.founding-member{
+    text-align: right;
+
+}
+.organization-name{
+      color:#fa3e05;
+      font-size:1.2rem;
+      text-align: right;
+      font-weight:bold;
+}
+.time-duration{
+    font-size:.9rem;
+    text-align: right;
+}
+.para{
+    font-size:.9rem;
+    text-align: justify;
+    padding-top:.3rem;
+}
+
+
+.founding-member-left{
+    text-align:left;
+
+}
+.organization-name-left{
+      color:#fa3e05;
+      font-size:1.2rem;
+      text-align:left;
+      font-weight:bold;
+}
+.time-duration-left{
+    font-size:.9rem;
+    text-align:left;
+}
+/* Starting of the contact section */
+section{
+    width:100%;
+    height:75vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#contact{
+    background-color:#0abcf9;
+    background-image:linear-gradient(50deg,#2857a4 0%,#403066 74%);
+    color:white;
+    padding-bottom:40px;
+}
+#contact h3 span{
+    color:white;
+}
+#contact-form{
+    margin:20%;
+}
+#contact-form-container input,textarea{
+    max-width: 90%;
+    color:#d9dcdd;
+    background:transparent;
+    border:0px solid white;
+    border-bottom:2px solid white;
+    line-height: 1.6;
+    width:90%;
+    padding:4px 10px;
+    font-size:1.05rem;
+    margin:15px;
+
+}
+#contact-form-container button{
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+#my-details-container{
+    width:35%;
+    margin-left:6%;
+
+}
+#contact-container{
+    margin-left:10%;
+}
+#my-details-container h3{
+    color:white;
+    font-weight: 550;
+    font-size:1.4rem;
+}
+#my-details-container p{
+    font-size:1rem;
+    font-weight: 300;
+}
+#contact-form-container{
+    width:50%
+}
+ #contact-container{
+    display: flex;
+    flex-direction: row;
+
+ }
+ #my-details-info-container{
+    margin-bottom:20px;
+    color:#d0dcdd;
+    font-size:1rem;
+ }
+#my-details-info-container span{
+ margin-left:0.4rem;
+}
+#my-details-info-container span i{
+    color:white;
+}
+.space{
+    margin:10px;
+}
+.margin-left{
+    margin-left:10px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline:none;
+}
+#contact-form-container button:hover{
+    background: white;
+    color:#13386fe0;
+}
+.mb40px{
+    margin-bottom: 20px;
+}
+.mb7px{
+    margin-bottom: 7.5px;
+}
+/* staring of the portfolio section */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portfolio-container{
+    width:100%;
+    min-height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-container-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.portfolio-container-gallery img{
+    width:100%;
+}
